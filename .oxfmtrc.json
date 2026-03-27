@@ -1,0 +1,17 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "singleQuote": true,
+  "endOfLine": "lf",
+  "ignorePatterns": [
+    ".output",
+    "stats.html",
+    "stats-*.json",
+    ".wxt",
+    "package.json",
+    "package-lock.json",
+    "yarn.lock",
+    "pnpm-lock.yaml",
+    "pnpm-workspace.yaml",
+    "bun.lock*"
+  ]
+}
