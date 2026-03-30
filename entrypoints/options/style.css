@@ -1,0 +1,30 @@
+ :root {
+  --ts-base: #286598;
+  --ts-base-dark: #1f527c;
+  --ts-base-soft: #d7e4ef;
+  --ts-base-tint: #f1f6fa;
+  --ts-base-ring: rgb(40 101 152 / 20%);
+ }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+  background: linear-gradient(180deg, #f4f8fb 0%, #edf3f8 100%);
+  color: #333;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

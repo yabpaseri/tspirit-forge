@@ -1,0 +1,67 @@
+# Extension metadata
+extName: TSpirit Forge
+extDescription: A browser extension that enhances TeamSpirit
+
+# Content script buttons
+btnImport: Import
+btnExport: Export
+btnSort: Sort
+btnSelectExpired: Select All Expired
+
+# Options page
+optionsTitle: TSpirit Forge Settings
+sortRuleHeading: Sort Rules
+btnResetDefault: Reset to Default
+sortRuleDescription: Rules applied when pressing the "Sort" button on the Job Assignment screen.
+savedIndicator: Saved
+
+# Base sort
+baseSortLegend: Base Sort
+baseSortHint: Sort order applied to rows that do not match any condition rule.
+sortOptionSort: Sort
+sortOptionKeep: Keep Order
+labelKey: Key
+labelOrder: Order
+
+# Conditional rules
+condRuleLegend: Condition Rules
+condRuleHint: Matching rows are moved to the top or bottom. Rules are applied from top to bottom; if a row matches multiple rules, the last match wins.
+condRuleEmpty: No condition rules.
+btnAddRule: + Add Rule
+titleDrag: Drag to reorder
+titleDelete: Delete
+confirmDelete: Delete this rule?
+confirmReset: Reset all settings to default?
+labelCondition: Condition
+labelTarget: Target
+labelMatch: Match
+labelValue: Value
+placeholderValue: Value
+labelMoveTo: Move To
+labelSort: Sort
+sortOptionBase: Same as Base
+sortOptionCustomize: Custom
+
+# Sort key labels
+keyJobCode: Job Code
+keyJobName: Job Name
+
+# Sort order labels
+orderAsc: Ascending
+orderDesc: Descending
+
+# Move labels
+moveTop: To Top
+moveBottom: To Bottom
+
+# Condition labels
+condMatch: Exact Match
+condNotMatch: Not Match
+condInclude: Contains
+condNotInclude: Not Contains
+condStartsWith: Starts With
+condEndsWith: Ends With
+condNotStartsWith: Not Starts With
+condNotEndsWith: Not Ends With
+condMatchRegexp: Matches Regexp
+condNotMatchRegexp: Not Matches Regexp

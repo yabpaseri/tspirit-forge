@@ -1,0 +1,67 @@
+# Extension metadata
+extName: TSpirit Forge
+extDescription: TeamSpiritを強化するブラウザ拡張機能
+
+# Content script buttons
+btnImport: インポート
+btnExport: エクスポート
+btnSort: ソート
+btnSelectExpired: 終了を全選択
+
+# Options page
+optionsTitle: TSpirit Forge 設定
+sortRuleHeading: ソートルール
+btnResetDefault: デフォルトに戻す
+sortRuleDescription: ジョブアサイン画面で「ソート」ボタンを押した際に適用されるルールです。
+savedIndicator: 保存しました
+
+# Base sort
+baseSortLegend: 基本ソート
+baseSortHint: 条件ルールに該当しない行に適用されるソート順です。
+sortOptionSort: ソートする
+sortOptionKeep: 並び替えなし
+labelKey: キー
+labelOrder: 順序
+
+# Conditional rules
+condRuleLegend: 条件ルール
+condRuleHint: 条件に一致する行を先頭・末尾に移動します。上から順に適用され、複数の条件にマッチした場合は後の条件が優先されます。
+condRuleEmpty: 条件ルールはありません。
+btnAddRule: + ルールを追加
+titleDrag: ドラッグして並べ替え
+titleDelete: 削除
+confirmDelete: このルールを削除しますか？
+confirmReset: すべての設定をデフォルトに戻しますか？
+labelCondition: 条件
+labelTarget: 対象
+labelMatch: 比較
+labelValue: 値
+placeholderValue: 値
+labelMoveTo: 移動先
+labelSort: ソート
+sortOptionBase: 基本ソートと同じ
+sortOptionCustomize: カスタム
+
+# Sort key labels
+keyJobCode: ジョブコード
+keyJobName: ジョブ名
+
+# Sort order labels
+orderAsc: 昇順
+orderDesc: 降順
+
+# Move labels
+moveTop: 先頭へ
+moveBottom: 末尾へ
+
+# Condition labels
+condMatch: 完全一致
+condNotMatch: 完全不一致
+condInclude: 含む
+condNotInclude: 含まない
+condStartsWith: 前方一致
+condEndsWith: 後方一致
+condNotStartsWith: 前方不一致
+condNotEndsWith: 後方不一致
+condMatchRegexp: 正規表現で一致
+condNotMatchRegexp: 正規表現で不一致

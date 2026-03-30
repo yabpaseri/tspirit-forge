@@ -4,14 +4,17 @@ import { defineConfig } from 'wxt';
 export default defineConfig({
   modules: ['@wxt-dev/module-react', '@wxt-dev/i18n/module'],
   manifest: {
+    name: '__MSG_extName__',
+    description: '__MSG_extDescription__',
     default_locale: 'en',
+    permissions: ['storage'],
   },
   autoIcons: {
     sizes: {
-      16: './assets/wxt.svg',
-      32: './assets/wxt.svg',
-      48: './assets/wxt.svg',
-      128: './assets/wxt.svg',
+      16: './assets/icon.svg',
+      32: './assets/icon.svg',
+      48: './assets/icon.svg',
+      128: './assets/icon.svg',
     },
   },
 });
