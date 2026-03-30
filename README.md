@@ -1,74 +1,76 @@
 # TSpirit Forge
 
-TSpirit Forge は、TeamSpirit の日常操作を補助するための非公式ブラウザ拡張です。
+[日本語](docs/README.ja.md)
 
-現在は主に、工数実績ダイアログの CSV 入出力機能と、ジョブアサイン画面の並び替え支援機能を提供しています。
+TSpirit Forge is an unofficial browser extension that streamlines everyday TeamSpirit operations.
 
-## 機能
+It currently provides CSV import/export for the workload dialog and sorting/batch-select features for the job assignment page.
 
-### 工数実績ダイアログ
+## Features
 
-- CSV エクスポート
-- CSV インポート
-- 日次確定済み画面でもエクスポート可能
+### Workload Dialog
 
-出力ファイル名は `workload.csv` です。CSV は `name,time` 形式で扱います。
+- CSV Export
+- CSV Import
+- Export is available even on the daily-confirmed view
 
-### ジョブアサイン画面
+The output file is `workload.csv` in `name,time` format.
 
-- `ソート` ボタンを追加
-- `終了を全選択` ボタンを追加
-- オプション画面からソートルールを編集可能
+### Job Assignment Page
 
-ソートルールでは次の設定ができます。
+- Adds a **Sort** button
+- Adds a **Select All Expired** button
+- Sort rules are fully customizable from the options page
 
-- 基本ソート: 並び替えなし / キー指定ソート
-- 条件ルール: 対象、比較条件、値
-- 移動先: 先頭 / 末尾
-- 条件一致行のソート: 並び替えなし / 基本ソートと同じ / カスタム
-- 条件ルールのドラッグ&ドロップ並べ替え
+Sort rules support the following:
 
-条件ルールは上から順に評価され、複数条件に一致した場合は後の条件が優先されます。
+- Base sort: None / Sort by a specific key
+- Conditional rules: Target, match condition, and value
+- Move to: Top / Bottom
+- Sort within matched rows: None / Same as base sort / Custom
+- Drag-and-drop reordering of conditional rules
 
-## 利用方法
+Conditional rules are evaluated from top to bottom; when multiple rules match, the later rule takes priority.
 
-### 工数実績ダイアログ
+## Usage
 
-- `エクスポート` を押下すると、現在の工数入力内容を `workload.csv` として保存できます
-- `インポート` を押下すると、CSV から工数入力内容を反映できます
+### Workload Dialog
 
-CSV は `name,time` 形式で扱います。
+- Click **Export** to save the current workload entries as `workload.csv`
+- Click **Import** to load entries from a CSV file
 
-### ジョブアサイン画面
+CSV format: `name,time`
 
-- `ソート` を押下すると、オプションで設定したルールに基づいて並び替えます
-- `終了を全選択` を押下すると、終了ジョブをまとめてチェックできます
-- オプション画面では、基本ソートと条件ルールを編集できます
+### Job Assignment Page
 
-## デフォルト設定
+- Click **Sort** to reorder jobs based on the configured rules
+- Click **Select All Expired** to check all expired jobs at once
+- Open the options page to edit base sort and conditional rules
 
-- 基本ソート: ジョブコード昇順
-- 条件ルール: ジョブ名の後方一致で、ロケールに応じた `(終了)` または `(End)` を末尾へ
+## Default Settings
 
-初期条件ルールの接尾辞は、拡張の初期化時にブラウザロケールから決まります。
+- Base sort: Job Code ascending
+- Conditional rule: Move jobs ending with `(End)` (or `(終了)` for Japanese locale) to the bottom
 
-## 対応ページ
+The suffix used in the default rule is determined by the browser locale when the extension initializes.
 
-この拡張は次の TeamSpirit ページで動作します。
+## Supported Pages
+
+This extension works on the following TeamSpirit pages:
 
 - `https://*.vf.force.com/apex/AtkWorkTimeView*`
 - `https://*.vf.force.com/apex/AtkEmpJobView*`
 
-## ストレージと権限
+## Storage & Permissions
 
-- 利用権限: `storage`
-- ソート設定はブラウザのローカルストレージに保存
+- Permission required: `storage`
+- Sort settings are saved in the browser's local storage
 
-## 開発者向け情報
+## Development
 
-開発環境のセットアップ、ビルド、利用スクリプト、技術スタックは [DEVELOPMENT.md](DEVELOPMENT.md) を参照してください。
+See [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md) for setup, build instructions, scripts, and tech stack.
 
-## 留意事項
+## Disclaimer
 
-- この拡張は非公式です
-- TeamSpirit 側の DOM や画面構成が変わると、動作しなくなる可能性があります
+- This extension is unofficial and is not affiliated with TeamSpirit Inc.
+- If TeamSpirit changes its page structure, the extension may stop working.

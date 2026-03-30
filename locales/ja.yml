@@ -1,6 +1,6 @@
 # Extension metadata
 extName: TSpirit Forge
-extDescription: TeamSpiritを強化するブラウザ拡張機能
+extDescription: TeamSpirit の工数実績ダイアログに CSV 入出力機能を、ジョブアサイン画面にソート・終了ジョブ一括選択機能を追加する非公式拡張です。
 
 # Content script buttons
 btnImport: インポート

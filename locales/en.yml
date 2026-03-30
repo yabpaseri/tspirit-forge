@@ -1,6 +1,6 @@
 # Extension metadata
 extName: TSpirit Forge
-extDescription: A browser extension that enhances TeamSpirit
+extDescription: Adds CSV import/export to TeamSpirit's workload dialog and sorting & batch-select to the job assignment page.
 
 # Content script buttons
 btnImport: Import
